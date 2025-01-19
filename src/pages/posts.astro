@@ -7,16 +7,12 @@ const pageTitle = "Posts";
 ---
 
 <Layout pageTitle={pageTitle}>
-    <div class="gif">
-        <img width="300" height="259" alt="RaccoonNotesGif" src="/blog.webp" />
-    </div>
-    <h2>Blog</h2>
+   <h2>Posts</h2>
     <ul role="list" class="link-card-grid">
         {
             allPosts.map((cardPost) => (
                 <Card
-                    url={`/posts/${cardPost.slug}/`}
-                    image={cardPost.data.image.url}
+                  url={`/blog/posts/${cardPost.slug}/`}
                     title={cardPost.data.title}
                     date={cardPost.data.date}
                 />

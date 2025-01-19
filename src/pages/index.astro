@@ -1,52 +1,31 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const pageTitle = "Milky-Way";
+const pageTitle = "Emmay's Blog";
+const off = false
 ---
 <Layout pageTitle={pageTitle}>
-    <div class="gif">
-        <img width="300" height="259" alt="RaccoonSpaceGif" src="/space.webp"/>
-    </div>
-    <h1>Milky-Way</h1>
-    <span class="badge">Digital Craftsman (Developer)</span>
-    <h2>About</h2>
+  {off ?   <h1>Home</h1>
+    <span class="badge">Digital Garden</span>
+  : ""}
+    <h2>Sobre</h2>
     <p>
-        Praesent malesuada mi nisi, quis tempus magna venenatis ut.
-        Suspendisse tempor sem at scelerisque congue. Curabitur mollis,
-        mi id molestie finibus, metus sem sagittis nunc, euismod feugiat orci neque non lorem.
-        Aenean sollicitudin erat eu molestie tempus. Nunc ac eros elementum, fermentum lacus at,
-        pellentesque mauris. Suspendisse eros neque, interdum euismod consectetur convallis,
-        porttitor at massa. Phasellus a ultrices arcu. Donec viverra, lorem in pellentesque euismod,
-        libero justo gravida nibh, non ultricies justo purus ultrices est.
+    Emmay é o meu cantinho pessoal, onde os livros e pensamentos se entrelaçam e fazem sentido.
+    Aqui, eu me permito mergulhar nas histórias que me tocam e nas ideias que me fazem refletir.
+    Às vezes, é sobre um romance que me arrebata, outras vezes é uma reflexão filosófica que me faz ver a vida de outra maneira. 
     </p>
     <p>
-        Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
-        Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
-        facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
-        Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
+    Cada post é uma tentativa de entender o mundo e a mim mesma, enquanto compartilho as palavras que me inspiram e desafiam.
     </p>
-    <div class="center">
-        <a href="/works/">
-            <button class="btn">My portfolio</button>
-        </a>
-    </div>
-    <h2>Skills</h2>
-    <div class="skills center">
-        <img class="skills__img" width="46" height="46" alt="C#" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="DotNetCore" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="Angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="Bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="HTML" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"/>
-    </div>
-    <h2>Interests</h2>
+
+   <h2>Interesses</h2>
     <p>
-        Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat accumsan.
-        Proin semper semper dui nec feugiat. Donec cursus neque id aliquet finibus. Morbi
-        facilisis turpis nibh, nec dictum orci dictum nec. In hac habitasse platea dictumst.
-        Maecenas mollis turpis vitae turpis bibendum, vitae tristique arcu eleifend.
-    </p>
+    <ul>
+      <li>    Literatura: O que as palavras podem me ensinar, desde os clássicos até os mais novos.</li>
+      <li>    Filosofia: Pensamentos que me ajudam a decifrar as complexidades da vida e do ser.</li>
+      <li>    Criatividade: Como as histórias e ideias podem me levar a novos lugares, ou me fazer olhar para os velhos de outra maneira.</li>
+      <li>    Autoconhecimento: Livros e pensamentos que são pequenos guias na minha jornada pessoal.</li>
+      <li>    Cultura: A maneira como as diferentes perspectivas podem enriquecer o meu entendimento sobre o mundo e sobre mim.   </li>
+    </ul>
+  </p>
 </Layout>
 
