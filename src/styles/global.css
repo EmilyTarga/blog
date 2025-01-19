@@ -250,17 +250,8 @@ footer {
     border-color: var(--text-link);
 }
 
-
-.git-icon {
-    content: url("/github-mark-white.svg");
-}
-
 .mail-icon {
-    content: url("/mail-white.svg");
-}
-
-.linked-in {
-    content: url("/li-in-white.png");
+    content: url("/blog/mail-white.svg");
 }
 
 /* 404 */
@@ -344,10 +335,6 @@ html.light {
 @media only screen and (max-width: 600px) {
     body {
         width: 350px;
-    }
-
-    .navbar {
-        display: initial;
     }
 
     .navbar__title {
