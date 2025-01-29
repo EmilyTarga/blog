@@ -1,8 +1,12 @@
 ---
 import { getCollection } from "astro:content";
-import Layout from "../layouts/Layout.astro";
-import Card from "../components/CardPost.astro";
-const allPosts = await getCollection("posts");
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/CardPost.astro";
+
+const ptbrPosts = await getCollection('posts', ({ id }) => {
+  return id.startsWith('ptbr/');
+});
+
 const pageTitle = "Posts";
 ---
 
@@ -10,7 +14,7 @@ const pageTitle = "Posts";
    <h2>Posts</h2>
     <ul role="list" class="link-card-grid">
         {
-            allPosts.map((cardPost) => (
+            ptbrPosts.map((cardPost) => (
                 <Card
                   url={`/blog/posts/${cardPost.slug}/`}
                     title={cardPost.data.title}

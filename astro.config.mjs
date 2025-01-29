@@ -5,7 +5,10 @@ export default defineConfig({
   site: 'https://EmilyTarga.github.io',
   base: 'blog',
   i18n: {
-    locales: ["en", "pt-br"],
-    defaultLocale: "pt-br",
+    locales: ["en", "ptbr"],
+    defaultLocale: "ptbr",
+  },
+  routing: {
+    prefixDefaultLocale: true
   }
 });

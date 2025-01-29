@@ -1,13 +1,19 @@
 ---
+import { getLangFromUrl } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+
+import LanguagePicker from '../components/LanguagePicker.astro';
 import ThemeIcon from './ThemeIcon.astro';
 ---
 <div class="navbar">
     <div class="navbar__title">
-        <a href="/blog">Emmay</a>
+    <a href=`/blog/${lang}`>Emmay</a>
     </div>
     <div class="navbar__menu">
-        <a href="/blog/posts/">Posts</a>
+        <a href=`/blog/${lang}/posts/`>Posts</a>
+
         <ThemeIcon />
+    <LanguagePicker />
     </div>
 </div>
 
