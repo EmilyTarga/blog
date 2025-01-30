@@ -9,6 +9,7 @@
     --underline: #375a7f;
     --header: 'Pacifico', cursive;
     --body: 'Josefin Sans', sans-serif; 
+
 }
 
 html {
@@ -74,7 +75,7 @@ small, li {
     align-items: center;
 }
 
-.navbar__title > a, .navbar__menu > a {
+.navbar__title > a, .navbar__menu > a, .navbar__menu button {
     color: var(--text);
     text-decoration: none;
 }
@@ -177,6 +178,8 @@ small, li {
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 1rem;
     padding: 0;
+    border: 3px solid;
+    border-radius: 10px;
 }
 
 /* Button */
@@ -287,7 +290,7 @@ html.light {
     color: var(--text-light);
 }
 
-.light .navbar__menu > a {
+.light .navbar__menu > a, .light .navbar__menu button {
     color: var(--text-light);
 }
 
@@ -320,7 +323,7 @@ html.light {
 }
 
 .light .mail-icon {
-    content: url("/mail.svg");
+    content: url("/blog/mail.svg");
 }
 
 .light .linked-in {
@@ -366,3 +369,69 @@ html.light {
     }
 }
 
+pre {
+  background-color: #524331 !important;
+  color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden !important;
+  font-family: var(--body);
+  text-wrap: wrap;
+}
+
+.light pre {
+  background-color: #f59a2c !important;
+}
+
+pre:before {
+  content: '⚠️'
+}
+
+code {
+  font-family: var(--body);
+  font-size: 0.9rem;
+}
+
+pre code span.line:nth-child(1) {
+  font-weight: bold;
+}
+
+
+ /* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fdebf3;
+  min-width: 120px;
+  box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 
